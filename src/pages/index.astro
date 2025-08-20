@@ -1,13 +1,354 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import LogoMicrosoft from "../assets/logo-microsoft.png";
+import LogoReddit from "../assets/logo-reddit.png";
+import LogoAdobe from "../assets/logo-adobe.png";
+import LogoAirbnb from "../assets/logo-airbnb.png";
+import LogoStripe from "../assets/logo-stripe.png";
+import KeepScroll from "../assets/keep-scrolling.png";
 ---
+
 <Layout>
-	<h1 class="text-4xl font-bold">Welcome to Astro!</h1>
+	<!-- Hero Section -->
+	<section
+		id="hero"
+		class="flex flex-col items-center justify-center m-auto relative min-h-[400px] md:min-h-[600px] lg:min-h-[500px]"
+	>
+		<h1 class="text-[3rem] relative bottom-29 md:text-[6rem] lg:text-[10rem] font-bold uppercase tracking-[4px] md:tracking-[8px] lg:tracking-[10px] text-[#391824]  md:text-start">
+			iphone 15
+		</h1>
+		<img
+			id="iphone15"
+			src="/src/assets/iphone15.png"
+			alt="Iphone 15"
+			class="absolute left-1/2 -translate-x-1/2 bottom-[20px] md:bottom-[-80px] lg:bottom-[-290px] h-[300px] md:h-[500px] lg:h-[650px] lg:w-[-200px] w-auto mask-b-from-80% mask-b-to-100%"
+		/>
+	</section>
+	<!-- Carousel Logo -->
+	<h2 class="text-[#391824] text-xl md:text-2xl font-bold text-center uppercase mt-40 md:mt-80 lg:mt-100">
+		Con la confianza de las marcas que conoces
+	</h2>
+	<div
+		id="carusel-logo"
+		class="flex items-center overflow-hidden mt-10 md:mt-20 gap-6 md:gap-10 w-full px-2 md:px-10"
+	>
+		<div id="logo-track" class="flex gap-6 md:gap-10 items-center min-w-max">
+			<img
+				src={LogoMicrosoft.src}
+				alt="Logo Microsoft"
+				class="h-10 w-10 md:h-20 md:w-20"
+			/>
+			<img
+				src={LogoReddit.src}
+				alt="Logo Reddit"
+				class="h-8 w-16 md:h-10 md:w-20"
+			/>
+			<img
+				src={LogoAdobe.src}
+				alt="Logo Adobe"
+				class="h-8 w-20 md:h-10 md:w-30"
+			/>
+			<img
+				src={LogoAirbnb.src}
+				alt="Logo Airbnb"
+				class="h-10 w-20 md:h-20 md:w-30"
+			/>
+			<img
+				src={LogoStripe.src}
+				alt="Logo Stripe"
+				class="h-8 w-20 md:h-15 md:w-30"
+			/>
+			<!-- Duplicados para efecto infinito -->
+			<img
+				src={LogoMicrosoft.src}
+				alt="Logo Microsoft"
+				class="h-10 w-10 md:h-20 md:w-20"
+			/>
+			<img
+				src={LogoReddit.src}
+				alt="Logo Reddit"
+				class="h-8 w-16 md:h-10 md:w-20"
+			/>
+			<img
+				src={LogoAdobe.src}
+				alt="Logo Adobe"
+				class="h-8 w-20 md:h-10 md:w-30"
+			/>
+			<img
+				src={LogoAirbnb.src}
+				alt="Logo Airbnb"
+				class="h-10 w-20 md:h-20 md:w-30"
+			/>
+			<img
+				src={LogoStripe.src}
+				alt="Logo Stripe"
+				class="h-8 w-20 md:h-15 md:w-30"
+			/>
+			<img
+				src={LogoMicrosoft.src}
+				alt="Logo Microsoft"
+				class="h-10 w-10 md:h-20 md:w-20"
+			/>
+			<img
+				src={LogoReddit.src}
+				alt="Logo Reddit"
+				class="h-8 w-16 md:h-10 md:w-20"
+			/>
+			<img
+				src={LogoAdobe.src}
+				alt="Logo Adobe"
+				class="h-8 w-20 md:h-10 md:w-30"
+			/>
+			<img
+				src={LogoAirbnb.src}
+				alt="Logo Airbnb"
+				class="h-10 w-20 md:h-20 md:w-30"
+			/>
+			<img
+				src={LogoStripe.src}
+				alt="Logo Stripe"
+				class="h-8 w-20 md:h-15 md:w-30"
+			/>
+			<img
+				src={LogoMicrosoft.src}
+				alt="Logo Microsoft"
+				class="h-10 w-10 md:h-20 md:w-20"
+			/>
+			<img
+				src={LogoReddit.src}
+				alt="Logo Reddit"
+				class="h-8 w-16 md:h-10 md:w-20"
+			/>
+			<img
+				src={LogoAdobe.src}
+				alt="Logo Adobe"
+				class="h-8 w-20 md:h-10 md:w-30"
+			/>
+			<img
+				src={LogoAirbnb.src}
+				alt="Logo Airbnb"
+				class="h-10 w-20 md:h-20 md:w-30"
+			/>
+			<img
+				src={LogoStripe.src}
+				alt="Logo Stripe"
+				class="h-8 w-20 md:h-15 md:w-30"
+			/>
+		</div>
+	</div>
+	<!-- features -->
+	<section
+		id="features"
+		class="bg-[#f2cdd5] text-[#391824] shadow-2xl p-9 md:p-40 md:pl-20 rounded-full w-full max-w-[1200px] mx-auto flex flex-col md:flex-col items-center mt-20 md:mt-40 md:text-start lg:w-full lg:min-w-full lg:flex-row lg:gap-20"
+	>
+		<div class="flex-1 ml-0 md:ml-20 w-full lg:ml-50">
+			<ul class="space-y-10 md:space-y-20">
+				<li class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+					<span
+						class="bg-[#6a6ae4] rounded-full p-4 flex items-center justify-center mb-2 md:mb-0"
+					>
+						<!-- Auto/car icon -->
+						<svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 13l2-5a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 5M5 13v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-4"/></svg>
+					</span>
+					<span
+						class="text-lg md:text-xl font-bold text-center md:text-left"
+						>Integración total con tu auto: navega, recibe indicaciones y controla tu música desde la pantalla del iPhone 15, compatible con CarPlay y los sistemas más avanzados.</span
+					>
+				</li>
+				<li class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+					<span
+						class="bg-[#d2636c] rounded-full p-4 flex items-center justify-center mb-2 md:mb-0"
+					>
+						<!-- Chip/CPU icon -->
+						<svg class="w-8 h-8 text-yellow-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+					</span>
+					<span
+						class="text-lg md:text-xl font-bold text-center md:text-left"
+						>Rendimiento ultrarrápido: el chip A16 Bionic te permite disfrutar de apps, juegos y multitarea sin límites, con eficiencia energética mejorada.</span
+					>
+				</li>
+				<li class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+					<span
+						class="bg-[#6a6ae4] rounded-full p-4 flex items-center justify-center mb-2 md:mb-0"
+					>
+						<!-- Credit card icon -->
+						<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M2 11h20"/></svg>
+					</span>
+					<span
+						class="text-lg md:text-xl font-bold text-center md:text-left"
+						>Pagos seguros y rápidos: añade tu tarjeta y paga con Face ID, Apple Pay y la máxima seguridad biométrica.</span
+					>
+				</li>
+				<li class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+					<span
+						class="bg-[#d2636c] rounded-full p-4 flex items-center justify-center mb-2 md:mb-0"
+					>
+						<!-- Music icon -->
+						<svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+					</span>
+					<span
+						class="text-lg md:text-xl font-bold text-center md:text-left"
+						>Música y entretenimiento: controla tus playlists, podcasts y streaming directamente desde el nuevo sistema de sonido envolvente.</span
+					>
+				</li>
+				<li class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+					<span
+						class="bg-[#d2636c] rounded-full p-4 flex items-center justify-center mb-2 md:mb-0"
+					>
+						<!-- Camera icon -->
+						<svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+					</span>
+					<span
+						class="text-lg md:text-xl font-bold text-center md:text-left"
+						>Fotos y videos profesionales: graba en 4K, edita al instante y comparte tus creaciones con la cámara de 48 MP y las nuevas herramientas de edición.</span
+					>
+				</li>
+				<li class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+					<span
+						class="bg-[#d2636c] rounded-full p-4 flex items-center justify-center mb-2 md:mb-0"
+					>
+						<!-- USB-C icon -->
+						<svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="7" y="10" width="10" height="4" rx="2"/><path d="M11 14v2h2v-2"/></svg>
+					</span>
+					<span
+						class="text-lg md:text-xl font-bold text-center md:text-left"
+						>Conectividad universal: USB-C para cargar, transferir y conectar todos tus dispositivos Apple y accesorios favoritos.</span
+					>
+				</li>
+			</ul>
+		</div>
+		<!-- Imagen del feature -->
+		<div id="iphone-mockup" class="flex-1 w-full flex justify-center">
+			<img
+				src="/src/assets/iphone15-4.png"
+				alt="iPhone Mockup"
+				class="h-[300px] md:h-[700px] lg:h-[800px] object-cover mt-10 md:mt-10 md:ml-20"
+			/>
+		</div>
+	</section>
+	<!-- scroll derecha -->
+	<div
+		id="contenedor"
+		class="w-[550%] mt-20 h-[80%] flex flex-col md:flex-row flex-row items-center uppercase text-[#391824] font-bold overflow-x-auto text-base md:text-[1.3rem] lg:w-[270%]"
+		style="scroll-snap-type: x mandatory;"
+	>
+		<!-- Cada bloque hijo -->
+		<div class="max-w-[40ch] flex items-center ml-10 md:ml-40 md:min-w-0 lg:ml-95 scroll-snap-align-start">
+			<h2 class="text-sm md:text-2xl">
+				El iPhone 15 te ofrece la mejor experiencia móvil: diseño premium, cámara de 48 MP, USB-C universal y el potente chip A16 Bionic. Todo lo que buscas en un smartphone, en un solo dispositivo.
+			</h2>
+			<img
+				id="keep-scroll"
+				src={KeepScroll.src}
+				alt="Desliza para ver más"
+				class="h-8 w-12 md:h-15 md:w-20 rotate-180 relative top-[-10px]"
+			/>
+		</div>
+		<picture class="min-w-[250px] md:min-w-0 scroll-snap-align-start">
+			<img
+				src="/src/assets/iphone15-5.png"
+				alt="iPhone 15 diseño y cámara"
+				class="h-[200px] w-[200px] md:h-[400px] md:w-[400px] ml-30 md:ml-50 mt-4 md:mt-10 mask-b-from-80% mask-b-to-100%"
+			/>
+		</picture>
+		<div class="max-w-[40ch] flex items-center ml-40 md:ml-[10%] min-w-[300px] md:min-w-0 scroll-snap-align-start">
+			<h2 class="text-sm md:text-2xl">
+				Cámara principal de 48 MP: captura tus momentos con una nitidez y color impresionantes, incluso en condiciones de poca luz. Tus recuerdos, ahora más vivos que nunca.
+			</h2>
+			<img
+				id="keep-scroll"
+				src={KeepScroll.src}
+				alt="Desliza para ver más"
+				class="h-8 w-12 md:h-15 md:w-20 rotate-180 relative top-[-10px]"
+			/>
+		</div>
+		<img
+			src="/src/assets/iphone15-6.png"
+			alt="Cámara principal iPhone 15"
+			class="h-[250px] w-[180px] md:h-[600px] md:w-[450px] ml-20 md:ml-50 mt-6 md:mt-20 mask-b-from-80% mask-b-to-100% min-w-[250px] md:min-w-0 scroll-snap-align-start"
+		/>
+		<div class="max-w-[40ch] flex items-center ml-40 md:ml-[9%] min-w-[300px] md:min-w-0 scroll-snap-align-start">
+			<h2 class="text-sm md:text-2xl">
+				USB-C: conecta y transfiere archivos, carga tu iPhone y tus AirPods con el mismo cable. Más rápido, más cómodo, más universal.
+			</h2>
+			<img
+				id="keep-scroll"
+				src={KeepScroll.src}
+				alt="Desliza para ver más"
+				class="h-8 w-12 md:h-15 md:w-20 rotate-180 relative top-[-10px]"
+			/>
+		</div>
+		<img
+			src="/src/assets/usb-c-iphone15.png"
+			alt="Puerto USB-C iPhone 15"
+			class="h-[250px] w-[200px] md:h-[600px] md:w-[500px] ml-20 md:ml-50 mt-4 md:mt-5 mask-b-from-70% mask-b-to-100% min-w-[250px] md:min-w-0 scroll-snap-align-start"
+		/>
+	</div>
 </Layout>
 
 <script>
-	import { gsap } from 'gsap';
+	import { gsap } from "gsap";
 	console.log("GSAP version: " + gsap.version);
-	import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+	import { SplitText } from "gsap/SplitText";
+	gsap.registerPlugin(SplitText);
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
 	gsap.registerPlugin(ScrollTrigger);
+
+	gsap.from("#hero > *", {
+		duration: 2,
+		y: -100,
+		opacity: 0,
+		stagger: 1,
+		ease: "power2.out",
+	});
+	window.addEventListener("DOMContentLoaded", () => {
+    const logoTrack = document.getElementById("logo-track");
+    if (!logoTrack) return; // Prevent null errors
+    const logosWidth = logoTrack.scrollWidth / 3;
+
+    gsap.to(logoTrack, {
+		x: -logosWidth,
+		duration: 20,
+		ease: "linear",
+		repeat: -1,
+		modifiers: {
+		x: gsap.utils.unitize((x: number) => parseFloat(String(x)) % -logosWidth)
+		}
+    });
+});
+	gsap.from("#features > div", {
+		scrollTrigger: {
+			trigger: "#features",
+			start: "top 60%",
+		},
+		duration: 1.2,
+		y: -100,
+		opacity: 0,
+		stagger: 0.3,
+		ease: "power2.out",
+	});
+
+	gsap.to("#keep-scroll", {
+		x: 20,
+		repeat: -1,
+		duration: 1,
+		yoyo: true,
+	});
+
+	window.addEventListener('DOMContentLoaded', () => {
+		const contenedor = document.querySelector('#contenedor');
+		if (!contenedor) return;
+		gsap.to(contenedor, {
+			x: `-${contenedor.scrollWidth - window.innerWidth}px`,
+			scrollTrigger: {
+				trigger: contenedor,
+				start: "top top",
+				end: `+=${contenedor.scrollWidth - window.innerWidth}`,
+				scrub: true,
+				pin: true,
+				anticipatePin: 1
+			}
+		});
+	});
 </script>
