@@ -9,11 +9,10 @@ import Navbar from "../components/Navbar.astro";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>Landing Iphone</title>
 	</head>
-	<body>
+	<body class="lg:overflow-x-hidden">
 		<Navbar />
 		<slot />
 		<Footer />
@@ -24,7 +23,6 @@ import Navbar from "../components/Navbar.astro";
 	@import "tailwindcss";
 	html,
 	body {
-		font-family: "system-ui";
 		background: #e4b7c1;
 		margin: 0;
 		width: 100%;

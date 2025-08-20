@@ -45,13 +45,15 @@
                 <a
                     href="#asd"
                     class="hover:text-white block text-center md:text-left"
-                    >Nosotros</a>
+                    >Nosotros</a
+                >
             </li>
             <li class="w-full md:w-auto">
                 <a
                     href="#"
                     class="hover:text-white block text-center md:text-left"
-                    >Contacto</a>
+                    >Contacto</a
+                >
             </li>
         </ul>
         <a
@@ -62,11 +64,13 @@
     </div>
 </nav>
 <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu");
-    if (menuToggle) {
-        menuToggle.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
+    if (typeof window !== "undefined") {
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+        if (menuToggle && menu) {
+            menuToggle.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        }
     }
 </script>
