@@ -235,7 +235,7 @@ import UsbIphone15 from "../assets/usb-c-iphone15.png";
 	<!-- scroll derecha -->
 	<div
 		id="contenedor"
-		class="w-[550%] mt-20 h-[80%] flex flex-col md:flex-row flex-row items-center uppercase text-[#391824] font-bold overflow-x-auto text-base md:text-[1.3rem] lg:w-[270%]"
+		class="w-max min-w-full mt-20 h-[80%] flex flex-row items-center uppercase text-[#391824] font-bold overflow-x-auto text-base md:text-[1.3rem] scroll-snap-x"
 		style="scroll-snap-type: x mandatory;"
 	>
 		<!-- Cada bloque hijo -->
@@ -345,16 +345,18 @@ import UsbIphone15 from "../assets/usb-c-iphone15.png";
 	window.addEventListener('DOMContentLoaded', () => {
 		const contenedor = document.querySelector('#contenedor');
 		if (!contenedor) return;
-		gsap.to(contenedor, {
-			x: `-${contenedor.scrollWidth - window.innerWidth}px`,
-			scrollTrigger: {
-				trigger: contenedor,
-				start: "top top",
-				end: `+=${contenedor.scrollWidth - window.innerWidth}`,
-				scrub: true,
-				pin: true,
-				anticipatePin: 1
-			}
-		});
+		if (window.innerWidth >= 768) {
+			gsap.to(contenedor, {
+				x: `-${contenedor.scrollWidth - window.innerWidth}px`,
+				scrollTrigger: {
+					trigger: contenedor,
+					start: "top top",
+					end: `+=${contenedor.scrollWidth - window.innerWidth}`,
+					scrub: true,
+					pin: true,
+					anticipatePin: 1
+				}
+			});
+		}
 	});
 </script>
