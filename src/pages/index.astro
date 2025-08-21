@@ -430,18 +430,22 @@ import UsbIphone15 from "../assets/usb-c-iphone15.png";
 		if (!contenedor) return;
 		const sections = gsap.utils.toArray("#contenedor > div");
 
+		// Detecta si es móvil
+		const isMobile = window.innerWidth < 768;
+		const blocksToScroll = isMobile ? sections.length - 2 : sections.length - 4;
+
 		gsap.to(contenedor, {
-			xPercent: -100 * (sections.length - 1), // se mueve hasta Texto 3
+			xPercent: -100 * blocksToScroll,
 			ease: "none",
 			scrollTrigger: {
 				trigger: "#horizontal-section",
 				pin: true,
 				scrub: 1,
-				snap: 1 / (sections.length - 1),
-				end: () => contenedor ? "+=" + contenedor.scrollWidth : "+=0", // fin dinámico hasta Texto 3
+				end: `+=${contenedor.scrollWidth - window.innerWidth}`,
 			},
 		});
 	});
+
 	gsap.from("#features > div", {
 		scrollTrigger: {
 			trigger: "#features",
@@ -452,12 +456,5 @@ import UsbIphone15 from "../assets/usb-c-iphone15.png";
 		opacity: 0,
 		stagger: 0.3,
 		ease: "power2.out",
-	});
-
-	gsap.to("#keep-scroll", {
-		x: 20,
-		repeat: -1,
-		duration: 1,
-		yoyo: true,
 	});
 </script>
