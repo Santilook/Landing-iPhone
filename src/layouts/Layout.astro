@@ -25,7 +25,9 @@ import Navbar from "../components/Navbar.astro";
 	</head>
 	<body class="lg:overflow-x-hidden">
 		<Navbar />
-			<slot />
+		<main id="main-content">
+      		<slot />
+    	</main>
 		<Footer />
 	</body>
 </html>

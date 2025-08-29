@@ -1,5 +1,5 @@
 ---
-    import LogoApple from "../assets/logo-apple.png";
+    import LogoApple from "../assets/logo-apple.webp";
 ---
 
 <footer id="footer"
@@ -11,21 +11,26 @@
         <div class="flex-1 min-w-[250px]">
             <img
                 src={LogoApple.src}
-                alt="Logo"
+                alt="Logo Apple"
+                width="80"
+                height="80"
                 class="w-20 mb-2"
             />
             <p class="text-[15px] mb-4">
                 Suscríbete para recibir las últimas novedades, lanzamientos y ofertas exclusivas sobre el iPhone 15 directamente en tu correo. Mantente conectado con la innovación de Apple.
             </p>
-            <form class="mb-4">
-                <label class="block mb-2">Manténgase actualizado</label>
+            <form aria-label="Formulario de suscripción" class="mb-4">
+                <label for="email" class="block mb-2">Manténgase actualizado</label>
                 <div class="flex gap-2">
                     <input
+                        id="email"
                         type="email"
                         placeholder="Introduce tu correo electrónico"
                         class="w-full p-2.5 border rounded-l-md outline-none"
+                        aria-label="Correo electrónico"
                     />
                     <button
+                        aria-label="Suscribirse al boletín de novedades"
                         class="bg-[#d2636c] hover:bg-[#c94c55] text-white px-5 rounded-r-md font-semibold cursor-pointer"
                         >Suscribirse</button
                     >
