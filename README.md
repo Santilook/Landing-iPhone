@@ -1,50 +1,79 @@
-<<<<<<< HEAD
-# Astro Starter Kit: Basics
+# Landing Page iPhone 15
 
-```sh
-pnpm create astro@latest -- --template basics
+Proyecto personal de landing page moderna y responsiva sobre iPhone 15, desarrollada con Astro y Tailwind CSS. Incluye animaciones GSAP, carrusel de logos, secciones de features con iconos SVG, comentarios de clientes y footer con redes sociales.
+
+## 🚀 Tecnologías principales
+- [Astro](https://astro.build/) (framework principal)
+- [Tailwind CSS](https://tailwindcss.com/) (estilos utilitarios)
+- [GSAP](https://gsap.com/) (animaciones)
+- SVGs nativos para iconos y logos
+
+## 📦 Estructura del proyecto
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── public/           # Imágenes y SVGs públicos
+├── src/
+│   ├── assets/       # Imágenes webp del iPhone 15
+│   ├── components/   # Navbar y Footer
+│   ├── layouts/      # Layout global con SEO
+│   ├── pages/        # index.astro (landing principal)
+│   └── styles/       # global.css (Tailwind)
+├── package.json      # Dependencias y scripts
+├── astro.config.mjs  # Configuración Astro
+├── tailwind.js       # Configuración Tailwind
+└── README.md         # Este archivo
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🧑‍💻 Instalación y uso
 
-## 🧞 Commands
+1. **Instala dependencias:**
+   ```sh
+   pnpm install
+   # o
+   npm install
+   ```
 
-All commands are run from the root of the project, from a terminal:
+2. **Inicia el servidor de desarrollo:**
+   ```sh
+   pnpm dev
+   # o
+   npm run dev
+   ```
+   Accede a `http://localhost:4321` en tu navegador.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+3. **Compila para producción:**
+   ```sh
+   pnpm build
+   # o
+   npm run build
+   ```
 
-## 👀 Want to learn more?
+4. **Previsualiza el build:**
+   ```sh
+   pnpm preview
+   # o
+   npm run preview
+   ```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-=======
-# Landing-iPhone
->>>>>>> 13038b24504315902982c71d4cfa942d9ac69b9c
+## 🛠️ Dependencias principales
+- `astro`
+- `tailwindcss`
+- `gsap`
+- `@astrojs/tailwind`
+
+## 📄 Notas para desarrolladores
+- Los SVGs de logos están en `/public/`
+- Las imágenes del iPhone 15 están en `src/assets/`
+- Los componentes principales son `Navbar.astro` y `Footer.astro`
+- El layout global y SEO está en `src/layouts/Layout.astro`
+- El archivo principal de la landing es `src/pages/index.astro`
+- Las animaciones GSAP están en el script de `index.astro`
+
+## 📬 Contacto
+Para dudas o sugerencias, abre un issue o contacta al autor.
+
+---
+
+**Autor:** Santilook
+**Fecha:** Octubre 2025
